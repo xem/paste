@@ -1,1 +1,1 @@
-<body contenteditable spellcheck=false onload=b[i='innerHTML']=atob((l=location).hash.slice(1)) oninput=l.hash=btoa(b[i]) id=b>
+<body contenteditable onload=b[i='innerHTML']=unescape(location.hash.slice(1,-1)) oninput=history.replaceState(0,0,"#"+escape(b[i]+1)) id=b>
